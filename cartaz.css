@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(212, 141, 8);
+    overflow:hidden;
+}
+.parent {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 2 / 3 / 4; }
+    .div2 { grid-area: 3 / 1 / 5 / 3; }
+    .div3 { grid-area: 2 / 4 / 4 / 6; }
+    .div4 { grid-area: 4 / 3 / 6 / 5; }
+    .div5 { grid-area: 6 / 2 / 8 / 4; }
+    .div6 { grid-area: 5 / 5 / 7 / 7; }
+    .div7 { grid-area: 3 / 6 / 5 / 8; }
+    .div8 { grid-area: 6 / 7 / 8 / 9; }
+    .div9 { grid-area: 1 / 7 / 3 / 9; }
+    .div10 { grid-area: 1 / 9 / 8 / 13; }
+
+.parent > div:not(.div10){
+    background-position: center;
+    background-size: cover;
+    border: white solid;
+    border-width: 5px 5px 20px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.div1{
+    background-image: url(fotos/foto01.png);
+    transform: rotate(15deg);
+}
+.div2{
+    background-image: url(fotos/foto02.png);
+    transform: rotate(-10deg);
+}
+.div3{
+    background-image: url(fotos/foto03.jpg);
+    transform: rotate(-15deg);
+}
+.div4{
+    background-image: url(fotos/foto04.png);
+    transform: rotate(-5deg);
+}
+.div5{
+    background-image: url(fotos/foto05.jpg);
+    transform: rotate(5deg);
+}
+.div6{
+    background-image: url(fotos/foto06.jpg);
+    transform: rotate(-12deg);
+}
+.div7{
+    background-image: url(fotos/foto07.jpg);
+    transform: rotate(12deg);
+}
+.div8{
+    background-image: url(fotos/foto08.jpg);
+    transform: rotate(7deg);
+}
+.div9{
+    background-image: url(fotos/foto09.png);
+    transform: rotate(-7deg);
+}
+.div10{
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+#data{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    justify-self: center;
+    transform: translateX(40px);
+    text-shadow: 2px 2px 8px #747474;
+}
+#titulo{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    margin-top: -40px;
+    transform: translateX(5px);
+    text-shadow: 2px 2px 8px #747474;
+}
+#poema{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: block;
+    transform: translateX(40px);
+    height: fit-content;
+    width: 380px;
+    border-radius: 10px;
+    background-color: rgb(255, 166, 0);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#autor{
+    font-family: 'Roboto Condensed', sans-serif;
+    transform: translate(50px, -10px);
+    font-size: 25px;
+}
+#poema>p{
+    font-style: italic;
+    font-size: 17px;
+    transform: translateX(5px);
+}
